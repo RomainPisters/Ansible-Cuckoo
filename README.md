@@ -16,6 +16,7 @@ This is a fully functional updated standalone Ansible Playbook for building a Cu
 - M2Crypto
 - Tor
 - INetSim
+- Virtualbox
 
 ## Prerequisites
 The playbook automatically integrates Cuckoo to systemd. It creates the following services: cuckoo.service, cuckoo_api.service, cuckoo_web.service and cuckoo_rooter.service. If you dont have a vpn to route traffic through, disable the Openvpn role in `cuckoo-playbook/site.yml` and remove openvpnclient.service from `cuckoo-playbook/roles/start_up_cuckoo/files/cuckoo_rooter.service` at the top of the file, otherwise Cuckoo will fail to start.
@@ -42,12 +43,14 @@ It is very important that you change the config files before you start the playb
 
 - Change IP-address in `cuckoo-playbook/roles/start_up_cuckoo/files/cuckoo_api.service` and `cuckoo-playbook/roles/start_up_cuckoo/files/cuckoo_web.service` to reflect your setup.
 
+Please add the cuckoo VM image in .ovf format in the `cuckoo-playbook/roles/virtualbox/files/cuckoovm/` directory. Then they will be automatically placed in the correct directory.
+
 ## Installation
 
 The playbook aims to succesfully install to a fresh install of _Ubuntu 18.04 Server(amd64)_ with the following package options:
 
 - openssh-server
-- python 2.7
+- python 2.7 (symlinked to `python` -> `ln -s /usr/bin/python2.7 /usr/bin/python`)
 
 After the base OS install a dist-upgrade was conducted:
 

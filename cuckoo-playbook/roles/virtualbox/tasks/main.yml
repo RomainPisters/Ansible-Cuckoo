@@ -1,4 +1,11 @@
 ---
+- name: "Copy the cuckoo VM to the {{ cuckoo_appliance }} directory"
+  copy:
+    src: "{{ item }}"
+    dest: "{{ cuckoo_appliance }}"
+    mode: 0640
+  with_fileglob: cuckoovm/*
+
 - name: Configure the Oracle APT key
   become: true
   become_method: sudo
