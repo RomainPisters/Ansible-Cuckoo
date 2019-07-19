@@ -41,3 +41,4 @@ os_packages:
   - openvpn
   - iptables-persistent
   - openjdk-8-jdk
+  - net-tools
