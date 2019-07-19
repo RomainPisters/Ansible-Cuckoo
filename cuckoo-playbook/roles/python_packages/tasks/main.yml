@@ -1,41 +1,6 @@
-- name: Install pydeep package
+- name: Install pip packages
   become: true
   become_method: sudo
   pip:
-    name: pydeep
-    state: latest
-   
-- name: Install distorm3 package
-  become: true
-  become_method: sudo
-  pip:
-    name: distorm3
-    state: latest
-
-- name: Install pyvmomi package
-  become: true
-  become_method: sudo
-  pip:
-    name: pyvmomi
-    state: latest
-
-- name: Install m2crypto package
-  become: true
-  become_method: sudo
-  pip:
-    name: m2crypto
-    state: latest
-
-- name: Install pillow package
-  become: true
-  become_method: sudo
-  pip:
-    name: pillow
-    state: latest
-
-- name: Install psycopg2 package
-  become: true
-  become_method: sudo
-  pip:
-    name: psycopg2
+    name: "{{ pip_packages }}"
     state: latest

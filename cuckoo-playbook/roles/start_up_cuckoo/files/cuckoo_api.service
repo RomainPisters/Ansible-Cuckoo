@@ -3,7 +3,7 @@ Description=Cuckoo API Service
 After=network.target cuckoo_web.service
 
 [Service]
-ExecStart=/opt/cuckoo/bin/cuckoo api --host 172.16.1.30 --port 8881
+ExecStart=/opt/cuckoo/bin/cuckoo api --host 192.168.4.50 --port 8881
 Restart=on-failure
 User=cuckoo
 Group=cuckoo

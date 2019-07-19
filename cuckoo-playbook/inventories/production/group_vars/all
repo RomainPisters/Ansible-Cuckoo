@@ -13,8 +13,10 @@ distribution: bionic
 cuckoo_user: cuckoo
 
 ### Network cards ###
-nic: ens160
-ananic: ens192
+#nic: ens160
+#ananic: ens192
+nic: enp0s31f6
+ananic: enp0s31f6
 
 # Folders
 cwd: ~/.cuckoo
@@ -29,3 +31,5 @@ cuckoo_ver: 2.0.6
 yara_ver: 3.9.0
 volatility_ver: 2.6
 moloch_ver: 1.8.0-1
+virtualbox_ver: 6.0
+virtualbox_ext_pack_ver: 6.0.10

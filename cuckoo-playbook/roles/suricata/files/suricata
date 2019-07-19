@@ -16,7 +16,7 @@ SURCONF=/etc/suricata/suricata.yaml
 LISTENMODE=pcap
 
 # Interface to listen on (for pcap mode)
-IFACE=ens192
+IFACE=enp0s31f6
 
 # Queue number to listen on (for nfqueue mode)
 NFQUEUE="-q 0"

@@ -1,0 +1,7 @@
+pip_packages:
+  - pydeep
+  - distorm3
+  - pyvmomi
+  - m2crypto
+  - pillow
+  - psycopg2

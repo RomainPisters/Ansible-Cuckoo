@@ -52,7 +52,7 @@
 #
 # Set the bind address to a specific IP (IPv4 or IPv6):
 #
-network.host: 172.16.1.30
+network.host: 192.168.4.50
 #
 # Set a custom port for HTTP:
 #

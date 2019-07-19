@@ -3,7 +3,7 @@ Description=Cuckoo Web Service
 After=network.target cuckoo.service
 
 [Service]
-ExecStart=/opt/cuckoo/bin/cuckoo web runserver 172.16.1.30:8880
+ExecStart=/opt/cuckoo/bin/cuckoo web runserver 192.168.4.50:8880
 Restart=on-failure
 User=cuckoo
 Group=cuckoo
