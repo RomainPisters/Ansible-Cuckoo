@@ -43,7 +43,7 @@ It is very important that you change the config files before you start the playb
 
 - Change IP-address in `cuckoo-playbook/roles/start_up_cuckoo/files/cuckoo_api.service` and `cuckoo-playbook/roles/start_up_cuckoo/files/cuckoo_web.service` to reflect your setup.
 
-Please add the cuckoo VM image in .ovf format in the `cuckoo-playbook/roles/virtualbox/files/cuckoovm/` directory. Then they will be automatically placed in the correct directory.
+Please add the cuckoo VM image in .ovf format in the `cuckoo-playbook/roles/virtualbox/files/cuckoovm/` directory. Then this will be automatically placed in the correct directory.
 
 ## Installation
 
@@ -84,4 +84,4 @@ Once the installation has completed, Suricata, Moloch, Cuckoo Rooter alongside A
 
 ## Disclaimer
 
-This Playbook is created for use as a part of a Bachelor Thesis. It's environment has been successfully run on a ESXi host connected to a vCenter(vSphere).
+Prepped for Virtualbox environments
