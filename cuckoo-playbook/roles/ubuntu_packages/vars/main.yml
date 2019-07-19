@@ -42,3 +42,5 @@ os_packages:
   - iptables-persistent
   - openjdk-8-jdk
   - net-tools
+  - ethtool
+  - curl

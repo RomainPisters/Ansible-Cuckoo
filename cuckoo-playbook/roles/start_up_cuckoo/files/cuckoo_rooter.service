@@ -1,6 +1,6 @@
 [Unit]
 Description=Cuckoo Rooter Service
-After=network.target openvpnclient.service
+After=network.target
 
 [Service]
 ExecStart=/opt/cuckoo/bin/cuckoo rooter
