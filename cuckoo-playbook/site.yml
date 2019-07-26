@@ -4,21 +4,21 @@
 - hosts: all
   gather_facts: false
   roles:
-   - python
-   - cuckoo_user
-   - build_directory
-   - ubuntu_packages
-   - python_packages
-   - postgresql
-   - elasticsearch
-   - virtualbox
-   - cuckoo
-   - yara
-   - volatility
-   - suricata
-   - moloch
-   - tor
-   - inetsim
-   #- openvpn # No VPN present
-   - network
+   # - python
+   # - cuckoo_user
+   # - build_directory
+   # - ubuntu_packages
+   # - python_packages
+   # - postgresql
+   # - elasticsearch
+   # - virtualbox
+   # - cuckoo
+   # - yara
+   # - volatility
+   # - suricata
+   # - moloch
+   # - tor
+   # - inetsim
+   # #- openvpn # No VPN present
+   # - network
    - start_up_cuckoo

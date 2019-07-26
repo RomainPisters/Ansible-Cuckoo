@@ -1,2 +1,2 @@
 [all]
-cuckbox ansible_host=192.168.4.50 ansible_ssh_user=cuckoo ansible_ssh_pass=cuckoo ansible_sudo_pass=cuckoo
+cuckbox ansible_host=172.20.10.10 ansible_ssh_user=cuckoo ansible_ssh_pass=cuckoo ansible_sudo_pass=cuckoo
