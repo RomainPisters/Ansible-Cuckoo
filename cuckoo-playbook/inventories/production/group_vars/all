@@ -31,12 +31,12 @@ cuckoo_ver: 2.0.6
 yara_ver: 3.9.0
 volatility_ver: 2.6
 moloch_ver: 1.8.0-1
-virtualbox_ver: 6.0
-virtualbox_ext_pack_ver: 6.0.10
+virtualbox_ver: 5.2
+virtualbox_ext_pack_ver: 5.2.32
 
 ##### Cuckoo Sandbox guest VM #############
 
-cuckoo_appliance: /home/cuckoo/cuckoo1.ovf
+cuckoo_appliance: /home/cuckoo/cuckoo1.ova
 cuckoo_vm_label: cuckoo1
 
 ### IP conf ###
